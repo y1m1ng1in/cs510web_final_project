@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yiming Lin</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;200;300;400&family=Raleway:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="section-container">
+        <ul class="navbar">
+          <li><a href="#" class="navbar-item">Home</a></li>
+          <li><a href="#about" class="navbar-item">About</a></li>
+          <li><a href="#previous-work" class="navbar-item">Previous Work</a></li>
+          <li><a href="#projects" class="navbar-item">Projects</a></li>
+          <li><a href="#contact" class="navbar-item">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="section-container landing-container">
+        <h1 class="landing-header">Yiming Lin</h1>
+        <button class="landing-button">Learn More about me</button>
+      </div>
+      <section id="about" class="section-container additional-padding-top">
+        <h2 class="section-header">About Myself</h2>
+        <p class="section-content">
+          Hi! My name is Yiming Lin and this is my introduction. I am a master student at Portland State University,
+          major in computer science. I teaching assist CS333 operating systems. With the emphesis on programming
+          languages and formal methods in my graduate study, I have done some projects in compiler engineering. I am
+          very interested in reserach and develop tool that makes programming easier, which subjects to the area of
+          program synthesis.
+        </p>
+      </section>
+      <section id="previous-work" class="section-container additional-padding-top">
+        <h2 class="section-header">Previous Work</h2>
+        <section class="section-content">
+          <h3 class="section-subheader">Graduate Teaching Assistant for CS333</h3>
+          <ul>
+            <li>
+              Provided technical guidance to CS333 stduents for their xv6 operating system projects, which included
+              implementing operating system utitlities, system calls, optimization on dereferencing user pointers in
+              kernel space, primitive of user-level trap handling, lazy page allocation.
+            </li>
+            <li>Hold weekly office hours to answer student questions regards to their labs and lectures.</li>
+            <li>Assisted course instructor for logistical works</li>
+            <li>Graded stduent assignments.</li>
+          </ul>
+        </section>
+        <section class="section-content">
+          <h3 class="section-subheader">Technical Course Support Specialist for CS333</h3>
+          <ul>
+            <li>
+              Provided technical guidance to students for xv6 operating system projects, including implementation of
+              system calls, process state management, concurrent data structure, and process scheduling by multi-level
+              feedback queue.
+            </li>
+            <li>Graded stduent assignments.</li>
+          </ul>
+        </section>
+      </section>
+      <section id="projects" class="section-container project-container additional-padding-top">
+        <h2 id="project-section-header" class="section-header">Selected Projects</h2>
+        <section id="compiler-project" class="section-content">
+          <h3 class="section-subheader">Compiler Design and implementation</h3>
+          <p class="section-content">
+            I implemented a compiler employed nanopass framework that compiled the source code with a lisp-like syntax
+            to x86 assembly. The features I implemented included arithmetic, integer and boolean variables, conditions,
+            loops, arrays, tuples, functions, garbage collection, and type checking. I also implemented several
+            optimizations, which included partial evaluation on algebraic and conditional for simplifying the abstract
+            syntax tree, constant propagation and removal of dead variable assignment using dataflow analysis, as well
+            as elimination of “jump” instructions.
+          </p>
+          <a class="project-button" href="https://github.com/y1m1ng1in/psu-spring21-compiler-team-1">
+            <i class="fa fa-github"></i> View on Github</a>
+          <button class="project-button">Learn more</button>
+        </section>
+        <section class="section-content">
+          <h3 class="section-subheader">WordPress Plugins Project for Portland Literary Arts</h3>
+          <ul>
+            <li>Developed WordPress plugin to extend functionality for Portland Literary Arts</li>
+            <li>Provided technical support and troubleshooting for reliable operation of the website</li>
+            <li>Provided technical solutions to Literary Art community for attending Portland Book Festival 2019</li>
+            <li>Received positive feedback from project sponsors</li>
+          </ul>
+          <a class="project-button" href="https://literary-arts.org/">View Live Site</a>
+        </section>
+        <section class="section-content">
+          <h3 class="section-subheader">C-Tran Data Engineering</h3>
+          <ul>
+            <li>
+              Built Kafka data pipeline, Pandas data validation and integration tool, and loading into Postgre database
+            </li>
+            <li>
+              Proposed validation assertions, implemented data validation, integrated above 300k C-Tran sensor readings
+              per day from multiple sources
+            </li>
+            <li>
+              Implemented automatic, periodic data gathering and parsing tool and deployed on GCP virtual machines
+            </li>
+          </ul>
+          <a class="project-button" href="https://github.com/y1m1ng1in/dataeng-newbee"
+            ><i class="fa fa-github"></i> View on Github</a
+          >
+        </section>
+      </section>
+      <section id="contact" class="section-container additional-padding-top additional-margin-bottom">
+        <h2 class="section-header">Contact me</h2>
+        <form class="contact-form section-content" action="">
+          <label for="username">Your name:</label>
+          <input type="text" name="username" id="username" />
+          <label for="email">Your email:</label>
+          <input type="email" name="email" id="email" />
+          <label for="title">Message Title:</label>
+          <input type="text" name="title" id="title" />
+          <label for="message">Message:</label>
+          <textarea name="message" id="message"></textarea>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
