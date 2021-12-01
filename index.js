@@ -15,3 +15,12 @@ revealRestButton.addEventListener("click", () => {
   }
   AOS.init();
 });
+
+const navbarButton = document.getElementById("small-screen-navbar-button");
+
+navbarButton.addEventListener("click", () => {
+  const navbar = document.querySelector(".small-screen-header nav")
+  let currentDisplayStyle = getComputedStyle(navbar, null).display;
+  if (currentDisplayStyle === "none") navbar.style.display = "flex";
+  else navbar.style.display = "none";
+});

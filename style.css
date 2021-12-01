@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -7,8 +15,19 @@ header {
   padding-bottom: 3rem;
 }
 
+.small-screen-header {
+  display: none;
+}
+
 main {
   margin-top: 5rem;
+}
+
+.brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
 }
 
 .navbar {
@@ -135,26 +154,23 @@ main {
   margin-bottom: 2rem;
 }
 
-.project-button {
+.button {
   background-color: transparent;
   padding: 10px;
   border: 1px solid black;
-  margin-right: 5px;
   text-decoration: none;
   color: black;
   display: inline-block;
 }
 
-#compiler-project button {
-  font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
-
-.project-button:hover {
+.button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
+}
+
+.project-button {
+  margin-right: 5px;
 }
 
 .contact-form {
@@ -269,5 +285,41 @@ main {
     grid-column-end: 3;
     width: 300px;
     margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .small-screen-header {
+    display: block;
+    margin: 0 15px 0 15px;
+  }
+  .small-screen-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+  }
+  header {
+    padding-bottom: 0;
+  }
+  .contact-form {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .form-button-row {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .navbar-button {
+    border: none;
   }
 }

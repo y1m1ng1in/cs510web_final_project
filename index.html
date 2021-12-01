@@ -16,6 +16,21 @@
   </head>
   <body>
     <header>
+      <div class="small-screen-header" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+        <div class="small-screen-navbar">
+          <span class="brand">Yiming Lin</span>
+          <button aria-label="navbar" id="small-screen-navbar-button" class="button navbar-button"><i class="fa fa-bars"></i></button>
+        </div>
+        <nav class="section-container" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
+          <ul class="navbar">
+            <li><a href="#" class="navbar-item">Home</a></li>
+            <li><a href="#about" class="navbar-item">About</a></li>
+            <li><a href="#previous-work" class="navbar-item">Previous Work</a></li>
+            <li><a href="#projects" class="navbar-item">Projects</a></li>
+            <li><a href="#contact" class="navbar-item">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       <nav class="section-container" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
         <ul class="navbar">
           <li><a href="#" class="navbar-item">Home</a></li>
@@ -98,7 +113,7 @@
             syntax tree, constant propagation and removal of dead variable assignment using dataflow analysis, as well
             as elimination of “jump” instructions.
           </p>
-          <a class="project-button" href="https://github.com/y1m1ng1in/psu-spring21-compiler-team-1">
+          <a class="button project-button" href="https://github.com/y1m1ng1in/psu-spring21-compiler-team-1">
             <i class="fa fa-github"></i> View on Github</a
           >
         </section>
@@ -110,7 +125,7 @@
             <li>Provided technical solutions to Literary Art community for attending Portland Book Festival 2019</li>
             <li>Received positive feedback from project sponsors</li>
           </ul>
-          <a class="project-button" href="https://literary-arts.org/">View Live Site</a>
+          <a class="button project-button" href="https://literary-arts.org/">View Live Site</a>
         </section>
         <section class="section-content">
           <h3 class="section-subheader">C-Tran Data Engineering</h3>
@@ -126,7 +141,7 @@
               Implemented automatic, periodic data gathering and parsing tool and deployed on GCP virtual machines
             </li>
           </ul>
-          <a class="project-button" href="https://github.com/y1m1ng1in/dataeng-newbee"
+          <a class="button project-button" href="https://github.com/y1m1ng1in/dataeng-newbee"
             ><i class="fa fa-github"></i> View on Github</a
           >
         </section>
@@ -149,8 +164,8 @@
           <label for="message">Message:</label>
           <textarea name="message" id="message"></textarea>
           <div class="form-button-row">
-            <input class="project-button form-button" type="submit" value="Submit" name="submit" />
-            <input class="project-button form-button" type="reset" value="Reset" name="reset" />
+            <input class="button form-button" type="submit" value="Submit" name="submit" />
+            <input class="button form-button" type="reset" value="Reset" name="reset" />
           </div>
         </form>
       </section>
