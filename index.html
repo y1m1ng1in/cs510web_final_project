@@ -8,12 +8,14 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;200;300;400&family=Raleway:wght@100;200;300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="section-container">
+      <nav class="section-container" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
         <ul class="navbar">
           <li><a href="#" class="navbar-item">Home</a></li>
           <li><a href="#about" class="navbar-item">About</a></li>
@@ -24,11 +26,17 @@
       </nav>
     </header>
     <main>
-      <div class="section-container landing-container">
+      <div id="landing" class="section-container landing-container">
         <h1 class="landing-header">Yiming Lin</h1>
-        <button class="landing-button">Learn More about me</button>
+        <button id="reveal-more" class="landing-button">Learn More about me</button>
       </div>
-      <section id="about" class="section-container additional-padding-top">
+      <section
+        id="about"
+        class="section-container additional-padding-top"
+        data-aos="fade-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         <h2 class="section-header">About Myself</h2>
         <p class="section-content">
           Hi! My name is Yiming Lin and this is my introduction. I am a master student at Portland State University,
@@ -38,7 +46,13 @@
           program synthesis.
         </p>
       </section>
-      <section id="previous-work" class="section-container additional-padding-top">
+      <section
+        id="previous-work"
+        class="section-container additional-padding-top"
+        data-aos="fade-in"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
         <h2 class="section-header">Previous Work</h2>
         <section class="section-content">
           <h3 class="section-subheader">Graduate Teaching Assistant for CS333</h3>
@@ -65,7 +79,13 @@
           </ul>
         </section>
       </section>
-      <section id="projects" class="section-container project-container additional-padding-top">
+      <section
+        id="projects"
+        class="section-container project-container additional-padding-top"
+        data-aos="fade-in"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
         <h2 id="project-section-header" class="section-header">Selected Projects</h2>
         <section id="compiler-project" class="section-content">
           <h3 class="section-subheader">Compiler Design and implementation</h3>
@@ -78,7 +98,8 @@
             as elimination of “jump” instructions.
           </p>
           <a class="project-button" href="https://github.com/y1m1ng1in/psu-spring21-compiler-team-1">
-            <i class="fa fa-github"></i> View on Github</a>
+            <i class="fa fa-github"></i> View on Github</a
+          >
         </section>
         <section id="wordpress-project" class="section-content">
           <h3 class="section-subheader">WordPress Plugins Project for Portland Literary Arts</h3>
@@ -109,7 +130,13 @@
           >
         </section>
       </section>
-      <section id="contact" class="section-container additional-padding-top additional-margin-bottom">
+      <section
+        id="contact"
+        class="section-container additional-padding-top additional-margin-bottom"
+        data-aos="fade-in"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
         <h2 class="section-header">Contact me</h2>
         <form class="contact-form section-content" action="">
           <label for="username">Your name:</label>
@@ -120,8 +147,14 @@
           <input type="text" name="title" id="title" />
           <label for="message">Message:</label>
           <textarea name="message" id="message"></textarea>
+          <div class="form-button-row">
+            <input class="project-button form-button" type="submit" value="Submit" name="submit" />
+            <input class="project-button form-button" type="reset" value="Reset" name="reset" />
+          </div>
         </form>
       </section>
     </main>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="index.js"></script>
 </html>
