@@ -77,7 +77,7 @@ main {
 }
 
 .landing-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landing.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landing3072.jpg");
   background-size: cover;
   position: relative;
   height: 500px;
@@ -180,6 +180,12 @@ main {
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  .landing-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landing2048.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
   .section-container {
     width: 600px;
   }
@@ -207,6 +213,11 @@ main {
 }
 
 @media (max-width: 768px) {
+  .landing-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landing968.jpg");
+    background-position: center;
+  }
+
   .navbar-item {
     font-size: 1rem;
   }
